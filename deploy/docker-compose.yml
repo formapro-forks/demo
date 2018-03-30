@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  symfony_demo:
+    image: 'formapro/symfony-demo:latest'
+    env_file: [ '/.env' ]
+    ports: [ '80:80' ]
+    environment:
+      - SHELL_VERBOSITY=0
+      - APP_DEBUG=1
+      - APP_ENV=prod
